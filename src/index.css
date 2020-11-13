@@ -1,13 +1,567 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ..................................Header */
+
+.locationBar {
+  border: 2px solid #002f34;
+  border-radius: 5px;
+  padding: 5px 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.locationBar:focus-within {
+  border: 2px solid rgb(122, 217, 247);
+}
+
+input {
+  border: none;
+  padding: px;
+  background: transparent;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+input::placeholder {
+  color: #002f34 !important;
+}
+
+#arrowww {
+  /* transform: rotateZ(-180deg); */
+  transition: 0.3s ease-out;
+  border: none;
+  font-size: 25px !important;
+  cursor: pointer;
+}
+
+#searcharrow {
+  border: none;
+  font-size: 25px !important;
+}
+
+.search-container {
+  color: white;
+  cursor: pointer;
+  border: 2px solid #002f34 !important;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  /* width: 100% !important; */
+}
+#btnsearch {
+  font-size: 25px;
+  float: right;
+  height: 48px;
+  width: 48px;
+  text-size-adjust: 100%;
+  background-color: #002f34;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #002f34 !important;
+}
+.bbtn {
+  width: 104px;
+  height: 48px;
+  border: 0;
+  border-radius: 50px;
+  padding: 0px;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 217, 0) 35%,
+    rgb(0, 217, 255) 35% 65%,
+    blue 10%
+  );
+}
+.bgg {
+  width: 90px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+/*............................................... Favouroye Heart */
+
+.Favourite {
+  color: #002f34;
+}
+
+.FavouriteFull {
+  color: #002f34;
+}
+
+/* .........................DROPDOWN */
+ul li {
+  list-style: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  display: flex !important;
+  justify-content: start !important;
+  /* align-items: center !important; */
+}
+
+/* .................................................TOP IMG */
+
+.TopImg {
+  background-image: url("./Images/hero_bg_pk.jpg") !important;
+  height: 252px !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% !important;
+  background-size: cover !important;
+}
+/*.................................... FCbtn */
+
+#FCHead {
+  color: #002f34 !important;
+  font-size: 24px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#FCbtn {
+  color: #002f34 !important;
+  border-bottom: 2px solid #002f34 !important;
+  font-size: 14px !important;
+  /* height: 40px !important; */
+  text-decoration: none !important;
+  cursor: pointer !important;
+  font-weight: bolder;
+}
+
+#FCbtn:hover {
+  border-bottom: none !important;
+}
+/*..................................................... Third Last Footer */
+
+.thirdFooterimg {
+  margin-top: 0px !important;
+  width: 128px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.thirdfooterborder {
+  border-right: 2px solid rgb(185, 185, 185);
+  height: 136px;
+}
+
+.thirdfooterhead {
+  font-size: 34px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: #002f34;
+}
+
+.thirdfooterp {
+  font-size: 20px;
+  color: #002f34;
+}
+
+.thirdfooterp2 {
+  font-size: 14px;
+  color: #002f34;
+  padding-top: 50px;
+}
+/*..................................................... Second Last Footer */
+
+.secondFooter {
+  background-color: #ebeeef;
+}
+
+.SecondFooteranchor {
+  font-size: 12px;
+  text-decoration: none;
+  /* padding-right: 5px; */
+}
+
+.SecondFootol > a:hover {
+  color: #002f34 !important;
+  text-decoration: none;
+}
+
+.secondfootheading {
+  font-size: 14px;
+}
+
+.secondFooterimg {
+  margin: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.secondFooter ol {
+  padding: 0;
+  margin-bottom: 8px !important;
+}
+
+.secondFooter li {
+  padding: 0px;
+  list-style: none;
+  display: list-item;
+  margin-bottom: 3px;
+}
+
+i {
+  border-radius: 50px;
+  border: 2px solid rgb(116, 116, 116);
+  padding: 5px;
+  font-size: 10px;
+  margin-right: 8px;
+}
+/*...................................................... Down Footer */
+
+.footer {
+  background-color: #002f34;
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 16px;
+}
+
+.footer-anchor > a {
+  text-decoration: none !important;
+  color: white;
+}
+/* ..............................................SLIDER */
+
+.slick-arrow {
+  background-color: rgb(255, 255, 255) !important;
+  height: 60px !important;
+  width: 30px !important;
+  color: black !important;
+  box-shadow: 5px 5px 25px black;
+}
+
+.slick-next:before {
+  content: "→" !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  color: black !important;
+}
+
+.AC_head {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #002f34;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.AC_link {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #002f34;
+  padding-left: 20px !important;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.AC_link:hover {
+  color: #00a49f;
+  text-decoration: none;
+}
+/* .........................catorgaryContainer */
+
+.catorgaryContainer {
+  background-color: #ffffff;
+  z-index: 10;
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 95% !important;
+}
+
+.catorgaryContainer a {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #002f34;
+  padding-left: 20px !important;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.catorgaryContainer a:hover {
+  color: #00a49f;
+  text-decoration: none;
+}
+
+.AC_heading {
+  padding: 10px !important;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #002f34;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.AC_heading:hover {
+  color: #00a49f;
+}
+/* ........................LoadMoreBtn */
+
+#LoadMoreBtn {
+  text-transform: unset !important;
+  border: 2px solid #002f34 !important;
+  height: 48px !important;
+  color: #002f34 !important;
+  font-weight: bolder;
+  padding: 0 10px !important;
+  font-size: 16px !important;
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+}
+
+.border-d{
+  border-radius: 5px;
+  border: 2px solid #002f34 ;
+}
+
+#LoadMoreBtn2 {
+  width: 90%;
+  text-transform: unset !important;
+  border: 2px solid #002f34 !important;
+  height: 48px !important;
+  color: #ffffff !important;
+  background-color: #002f34;
+  font-weight: bolder;
+  padding: 0 10px !important;
+  font-size: 16px !important;
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+}
+
+/* ...........................Post css */
+
+.postBtn {
+  appearance: none;
+  background-color: #fff;
+  border-style: none;
+  box-shadow: inset 0 0 0 1px #002f34;
+  border-radius: 4px;
+  color: #002f34;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  min-width: 64px;
+  outline: 0;
+  margin: 5px !important;
+  padding: 8px 16px !important;
+}
+.active {
+  background-color: #c8f8f6 !important;
+  box-shadow: inset 0 0 0 2px #00a49f;
+  color: #00a49f;
+  font-weight: 700;
+  outline: none !important;
+  margin: 5px !important;
+
+}
+.postInput {
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: block;
+  width: 50%;
+  appearance: none;
+  background-color: #fff;
+  border-style: none;
+  box-shadow: inset 0 0 0 1px #002f34;
+  border-radius: 4px;
+  color: #002f34;
+  cursor: text;
+  font-size: 16px;
+  height: 48px;
+  min-width: 64px;
+  outline: 0;
+  padding: 8px 16px;
+}
+.postInput:focus {
+  background-color: #c8f8f6;
+  box-shadow: inset 0 0 0 2px #00a49f;
+  color: #00a49f;
+  font-weight: 700;
+  outline: none;
+}
+.postDes {
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: block;
+  width: 50%;
+  appearance: none;
+  background-color: #fff;
+  border-style: none;
+  box-shadow: inset 0 0 0 1px #002f34;
+  border-radius: 4px;
+  color: #002f34;
+  cursor: text;
+  font-size: 16px;
+  height: 96px;
+  min-width: 64px;
+  outline: 0;
+  padding: 8px 16px;
+}
+.postDes:focus {
+  background-color: #c8f8f6;
+  box-shadow: inset 0 0 0 2px #00a49f;
+  color: #00a49f;
+  font-weight: 700;
+  outline: none;
+}
+
+.postInputt {
+  width: 50%;
+  background-color: #fff;
+  border-style: none;
+  box-shadow: inset 0 0 0 1px #002f34;
+  border-radius: 4px;
+  color: #002f34;
+  cursor: text;
+  font-size: 16px;
+  height: 48px !important;
+  min-width: 64px;
+  outline: 0;
+  line-height: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.postInputt:focus {
+  background-color: #c8f8f6;
+  box-shadow: inset 0 0 0 2px #00a49f;
+  color: #00a49f;
+  font-weight: 700;
+  outline: none;
+}
+/*/.................... Location */
+
+.locationSelecor{
+  appearance: none;
+    background: none;
+    border: none;
+    color: #002f34;
+    display: block;
+    font-size: 16px;
+    height: 48px;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px rgba(0,47,52,.64);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 4px;
+    border-style: none;
+    margin: 4px 0;
+    flex-wrap: wrap;
+    position: relative;
+    display: flex; 
+      flex-direction: row;
+      align-items: flex-start;
+      border-radius: 4px;
+      border-style: none;
+      margin: 4px 0;
+      flex-wrap: wrap;
+      position: relative;
+      box-shadow: inset 0 0 0 1px #00a49f;
+    
+      background: #fff;
+      color: #002f34;
+}
+
+
+
+/* imagesinput */
+
+.imagesinput[type='file']{
+  display: none;
+}label{
+  color: #002f34;
+}
+
+
+
+
+/* .....................loginAuth */
+
+#LoadMoreBtnlogin{
+  margin: 4px 0 !important;
+  display: inline-flex;
+  width: 100%;
+  color: #002f34 !important;
+  border-radius: 4px;
+  border: 2px solid #002f34 !important;
+  padding: 0 10px !important;
+  font-size: 16px;
+  height: 48px !important;
+  font-family: Roboto,Arial,Helvetica,sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  /* border-style: none; */
+  background: none;
+  outline: none;
+  text-transform: lowercase;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 12px;
+  position: relative;
+  overflow: hidden;
+  line-height: normal;
+  text-decoration: none;
+};
+#LoadMoreBtnlogin:hover{
+  border: 5px solid #002f34 !important;
+  color: red !important;
+}
+
+/* slick arrow for login */
+
+
+.loginslick .slick-arrow {
+  background-color: transparent !important;
+  height: 0px !important;
+  color: black !important;
+  margin:0 50px;
+
+}
+.loginslick .slick-dots{
+  position: absolute;
+  left: 0;
+  right: 0; 
+  width: 100%;
+  margin-bottom: -20px;
+  text-align: center !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  }
+  .slick-dots li.slick-active button:before{
+    color:rgb(0, 217, 255) !important;
+    
+  }
+.loginslick img{
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100px !important;
+  height: 100px !important;
+
 }
